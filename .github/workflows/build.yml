@@ -8,18 +8,17 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: main.tex
-          
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: main.pdf
+    - name: Compile LaTeX document
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: main.tex
+    - name: Upload PDF file
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDF
+        path: main.pdf
 
     - name: Move PDF to root
       run: mv main.pdf ./compiled_resume.pdf
