@@ -1,0 +1,157 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Cole Smith} \\ \vspace{1pt}
+    \small (720) 999-6902 $|$ \href{mailto:colesmith5400@gmail.com}{\underline{colesmith5400@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/colesmith54}{\underline{linkedin.com/in/colesmith54}} $|$
+    \href{https://github.com/colesmith54}{\underline{github.com/colesmith54}}
+\end{center}
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Aug. 2023 -- May 2027}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{Cumulative GPA: 4.00}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Courses}: Data Structures and Algorithms, Advanced Programming Fundamentals, Intro to Computer Organization, Computational Linear Algebra, Applications of Discrete Structures}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Researcher}{Aug. 2023 -- Present}
+      {UF SurfLab}{Gainesville, FL}
+      \resumeItemListStart
+        \resumeItem{Developing and optimizing an iOS client for a 4-DOF  surgery simulation tool, enabling precise motion tracking and real-time data transmission for enhanced surgical training and education}
+        \resumeItem{Enhanced computational geometry techniques through software upgrades for converting quad-dominant meshes into B-spline patches, enabling smooth surface creation without major overhead}
+        \resumeItem{Integrated a Bernstein-Bézier coefficient generator for polar patch generation, extending sector support from 3-8 to any arbitrary $n \geq 3$.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Technical Officer}{Dec. 2023 -- Present}
+      {UF Software Engineering Club}{Gainesville, FL}
+      \resumeItemListStart
+        \resumeItem{Developing a full-stack mobile application aimed at unifying the UF club experience to promote university-wide club participation}
+        \resumeItem{Collaborating in an Agile team environment, utilizing the Scrum framework with bi-weekly sprints and sprint retrospectives for efficient project management}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Attitune} $|$ \emph{Next.js, Flask, MongoDB, Tailwind CSS, OpenAI}}{Oct. 2023}
+          \resumeItemListStart
+            \resumeItem{Utilized OpenAI GPT-4 API for sentiment analysis of 4 distinct attributes to recommend
+            music}
+            \resumeItem{Incorporated a cloud database with MongoDB Atlas populated with migrated Spotify Web API data to increase performance by 92\% and eliminate the risk of rate limits}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hospes} $|$ \emph{MERN Stack (MongoDB, Express, React, Node)}}{Sep. 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented a host/property filtering system and a REST API to connect to the React frontend}
+            \resumeItem{Quickly adapted to teck stack challenges, requiring a migration from Django to MERN due to authentication limits near the end of development}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Graphing Calculator for iOS} $|$ \emph{Swift}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{Engineered a comprehensive graphing calculator featuring a custom-built parser, tokenizer, and interpreter, capable of graphing multi-argument functions}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sorting Algorithm Visualizer} $|$ \emph{HTML, CSS (Bootstrap), JavaScript}}{May 2023}
+          \resumeItemListStart
+            \resumeItem{Developed an algorithm visualizer featuring a variety of sorting methods, complete with options to visualize each sort step-by-step and input custom arrays}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, JavaScript, HTML/CSS, Swift, Java, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React, Next.js, Node.js, Flask, Tailwind, TensorFlow} \\
+     \textbf{Developer Tools}{: MongoDB, Git, Unix, Linux, VS Code, Visual Studio} \\
+    }}
+ \end{itemize}
+
+\end{document}
