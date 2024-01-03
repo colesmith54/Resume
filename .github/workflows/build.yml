@@ -1,0 +1,35 @@
+name: Compile LaTeX
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up TeX Live
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex
+
+    - name: Compile LaTeX document
+      run: latexmk -pdf main.tex
+
+    - name: Move PDF to root
+      run: mv main.pdf ./compiled_resume.pdf
+
+    - name: Commit PDF
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add compiled_resume.pdf
+        git commit -m "Update PDF" -m "[skip ci]" || echo "No changes to commit"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
