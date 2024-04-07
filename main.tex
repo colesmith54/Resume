@@ -34,47 +34,47 @@
 \setlength{\footskip}{5pt}
 
 \titleformat{\section}{
-  \vspace{-3pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
@@ -101,6 +101,12 @@
 
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Teaching Assistant}{Jan. 2024 -- Present}
+      {COP3502C, Programming Fundamentals 1}{Gainesville, FL}
+      \resumeItemListStart
+        \resumeItem{Holding office hours, creating exams, and acting as a crucial resource for students}
+      \resumeItemListEnd
       \resumeSubheading
       {Technical Officer}{Dec. 2023 -- Present}
       {UF Software Engineering Club}{Gainesville, FL}
@@ -131,7 +137,7 @@
           {\textbf{PathPilot} $|$ \emph{React, TypeScript, Node, Framer Motion, Google Maps API, OpenStreetMap}}{Mar. 2024}
           \resumeItemListStart
             \resumeItem{Processed over 136GB of OSM data into a directed graph with distance/speed limit as an edge weight}
-            \resumeItem{Developed frontend and backend to perform route calculation using Dijkstra's and A*, using difference in angle between current node and next node with the end node as a heuristic}
+            \resumeItem{Developed frontend and backend to perform route calculation using Dijkstra’s and A*, using difference in angle between current node and next node with the end node as a heuristic}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Sorting Algorithm Visualizer} $|$ \emph{JavaScript}}{May 2023}
