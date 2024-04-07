@@ -34,47 +34,47 @@
 \setlength{\footskip}{5pt}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 \pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 \begin{document}
 
@@ -90,9 +90,11 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Florida}{Aug. 2023 -- May 2027}
-      {Bachelor of Science in Computer Science, Minor in Mathematics}{Cumulative GPA: 4.00}
+      {Bachelor of Science in Computer Science}{Cumulative GPA: 4.00}
       \resumeItemListStart
-        \resumeItem{\textbf{Relevant Courses}: Data Structures and Algorithms, Advanced Programming Fundamentals, Intro to Computer Organization, Computational Linear Algebra, Applications of Discrete Structures}
+        \resumeItem{\textbf{Minors}: Mathematics, Statistics}
+        \resumeItem{\textbf{Honors}: {University Scholar (publication by April 2025)}}
+        \resumeItem{\textbf{Relevant Courses}: Data Structures, Algorithms, Software Engineering, Computer Organization, Computational Linear Algebra, Discrete Structures, Statistics}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -100,25 +102,19 @@
 \section{Experience}
   \resumeSubHeadingListStart
       \resumeSubheading
-      {Software Engineering Intern}{May 2024 -- Aug. 2024}
-      {Intuit Credit Karma}{Charlotte, NC}
-      \resumeItemListStart
-        \resumeItem{Incoming role for Summer 2024}
-      \resumeItemListEnd
-      \resumeSubheading
       {Technical Officer}{Dec. 2023 -- Present}
       {UF Software Engineering Club}{Gainesville, FL}
       \resumeItemListStart
-        \resumeItem{Developing a full-stack React Native mobile application aimed at unifying the UF club experience to promote university-wide club participation and offer a better experience}
+        \resumeItem{Developing a full-stack React Native mobile application aimed at unifying the UF club experience}
         \resumeItem{Collaborating in an Agile team environment on the R\&D team, working on larger, experimental projects}
-        \resumeItem{Currently building an API endpoint to allow developers to push app-wide alerts such as maintenance}
+        \resumeItem{Added an endpoint to allow developers to push app-wide alerts, and emoji reactions to announcements}
       \resumeItemListEnd
     \resumeSubheading
       {Undergraduate Researcher}{Aug. 2023 -- Present}
       {UF SurfLab}{Gainesville, FL}
       \resumeItemListStart
         \resumeItem{Developing an iOS client for a surgery simulator, refactoring the remote and local servers to allow for device connection, and testing with surgeons from the UF Shands hospital}
-        \resumeItem{Integrated a Bernstein-Bezier coefficient generator for polar patch generation, extending sector support from 3-8 to any arbitrary $n \geq 3$, allowing for greater mesh compatibility for B-spline patches }
+        \resumeItem{Integrated a Bernstein-Bezier coefficient generator for polar patch generation, extending sector support from 3-8 to any arbitrary $n \geq 3$, allowing for greater mesh compatibility for B-spline patches}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -126,20 +122,19 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Attitune} $|$ \emph{Next.js, Flask, MongoDB, Tailwind CSS, OpenAI}}{Oct. 2023}
+          {\textbf{Sentimentor} $|$ \emph{React, TypeScript, Node, MongoDB, FastAPI, TensorFlow, PyTorch}}{Mar. 2024}
           \resumeItemListStart
-            \resumeItem{Utilized OpenAI GPT-4 API for sentiment analysis of 4 distinct attributes to recommend
-            music}
-            \resumeItem{Incorporated a cloud database with MongoDB Atlas populated with migrated Spotify Web API data to increase performance by 92\% and eliminate the risk of rate limits}
+            \resumeItem{Developed frontend and backend for a sentiment collection tool for professors to use during lectures}
+            \resumeItem{Enabled seamless room creation/joining with join codes, and sentiment collection through manual input and/or facial analysis using Residual Masking Network}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Hospes} $|$ \emph{MERN Stack (MongoDB, Express, React, Node)}}{Sep. 2023}
+          {\textbf{PathPilot} $|$ \emph{React, TypeScript, Node, Framer Motion, Google Maps API, OpenStreetMap}}{Mar. 2024}
           \resumeItemListStart
-            \resumeItem{Implemented a host/property filtering system and a REST API to connect to the React frontend}
-            \resumeItem{Quickly adapted to tech stack challenges, requiring a migration from Django to MERN due to authentication limits near the end of development}
+            \resumeItem{Processed over 136GB of OSM data into a directed graph with distance/speed limit as an edge weight}
+            \resumeItem{Developed frontend and backend to perform route calculation using Dijkstra's and A*, using difference in angle between current node and next node with the end node as a heuristic}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Sorting Algorithm Visualizer} $|$ \emph{HTML, CSS (Bootstrap), JavaScript}}{May 2023}
+          {\textbf{Sorting Algorithm Visualizer} $|$ \emph{JavaScript}}{May 2023}
           \resumeItemListStart
             \resumeItem{Developed an algorithm visualizer featuring a variety of sorting methods, complete with options to visualize each sort step-by-step and input custom arrays}
           \resumeItemListEnd
@@ -149,8 +144,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C/C++, JavaScript, HTML/CSS, Swift, Java, SQL} \\
-     \textbf{Frameworks \& Libraries}{: React, Next.js, Node.js, Flask, Tailwind, TensorFlow} \\
+     \textbf{Languages}{: Python, C/C++, JavaScript, TypeScript, HTML/CSS, Swift, Java, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Flask, Tailwind, TensorFlow} \\
      \textbf{Developer Tools}{: MongoDB, Git, Unix, Linux, VS Code, Visual Studio} \\
     }}
  \end{itemize}
