@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 \input{glyphtounicode}
 
 
@@ -105,8 +106,9 @@
       {Software Engineering Intern}{May 2024 -- Aug. 2024}
       {Intuit Credit Karma}{Charlotte, NC}
       \resumeItemListStart
-        \resumeItem{Developing an internal Scala library to manage and interact with Kafka clusters, including tools for offset management, rolling restart, and partition rebalancing}
-        \resumeItem{Aiming to improve cluster incident response speed by democratizing Kafka operations across all engineering teams, with necessary guardrails to ensure production safety}
+        \resumeItem{Developed an internal Scala library for managing Kafka clusters, enabling partition rebalancing, rolling restarts and \textbf{98\% faster} offset resets}
+        \resumeItem{Configured an automated PR workflow for scalable integration of the library into production services}
+        \resumeItem{Engineered a BigQuery schema loader task for robust changes to table schemas}
       \resumeItemListEnd
     \resumeSubheading
       {Teaching Assistant}{Jan. 2024 -- May 2024}
@@ -152,9 +154,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Scala, Java, Python, C/C++, JavaScript/TypeScript, HTML/CSS, Swift, GraphQL, SQL} \\
-     \textbf{Frameworks \& Libraries}{: React, Node.js, Flask, Tailwind, Framer Motion} \\
-     \textbf{Tools \& Environments}{: Apache Kafka, MongoDB, Git, Unix/Linux, Docker, IntelliJ IDEA, Visual Studio} \\
+     \textbf{Languages}{: Scala, Java, Python, C, C++, JavaScript, TypeScript, Bash, HTML/CSS, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Flask, Akka, TailwindCSS} \\
+     \textbf{Tools}{: Apache Kafka, MongoDB, Git, Unix, Linux, Docker, Google Cloud Storage, BigQuery, CircleCI} \\
     }}
  \end{itemize}
 
